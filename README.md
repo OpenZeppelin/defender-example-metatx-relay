@@ -84,3 +84,25 @@ const tx = await relayer.sendTransaction({
   data: forwarder.interface.encodeFunctionData('execute', args),
 });
 ``` 
+
+## Configuration
+
+This repo expects a `.env` file in the project root with the following values:
+
+```bash
+# Server
+APP_API_KEY
+APP_SECRET_KEY
+APP_FORWARDER_ADDRESS
+APP_BOXES_ADDRESS
+APP_INFURA_KEY
+
+# Client app
+REACT_APP_FORWARDER_ADDRESS
+REACT_APP_BOXES_ADDRESS
+REACT_APP_RELAY_URL
+
+# Deployment
+DEPLOY_RINKEBY_PRIVATE_KEY
+DEPLOY_INFURA_KEY
+```
