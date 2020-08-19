@@ -2,7 +2,7 @@
 
 Proof of concept for relaying meta transactions using a Defender Relayer via a GSNv2-compatible Trusted Forwarder.
 
-> Disclaimer: this is set up as a proof of concept. The code is experimental and has not been reviewed, much less audited. It is intended just for demo purposes.
+> Disclaimer: this is set up as a proof of concept. The code is experimental and has not been reviewed, much less audited. It is intended just for demo purposes. GSNv2 contracts have been copied from the [opengsn/forwarder](https://github.com/opengsn/forwarder) repository.
 
 This repo is structured as follows:
 - `contracts`: GSNv2 contracts for `TrustedForwarder` and `BaseRelayRecipient`, as well as a test `Boxes` contract that acts as relay recipient.
