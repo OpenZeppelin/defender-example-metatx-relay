@@ -41,7 +41,7 @@ const nonce = await forwarder.getNonce(from).then(nonce => nonce.toString());
 const boxesInterface = new ethers.utils.Interface(BoxesAbi);
 const data = boxesInterface.encodeFunctionData('setValue', [number]);
 const request = { from, to: BoxesAddress, value: 0, gas: 1e6, nonce, data };
-const toSign = { ... TypedData, message: request };
+const toSign = { ...TypedData, message: request };
 
 // Directly call the JSON RPC interface, since ethers does not support signTypedDataV4 yet
 // See https://github.com/ethers-io/ethers.js/issues/830

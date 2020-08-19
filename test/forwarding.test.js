@@ -69,7 +69,7 @@ describe("forwarding", function() {
     expect(bufferToHex(privateToAddress(senderPrivateKey))).to.eq(from.toLowerCase());
 
     const typedData = TypedData({ verifyingContract: forwarder.address });
-    const toSign = { ... typedData, message: request };
+    const toSign = { ...typedData, message: request };
     const signature = bufferToHex(signTypedData_v4(senderPrivateKey, { data: toSign }));
     const domainSeparator = bufferToHex(TypedDataUtils.hashStruct('EIP712Domain', typedData.domain, typedData.types));
 

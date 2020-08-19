@@ -64,7 +64,7 @@ export async function submit(number) {
     nonce,
     data
   };
-  const toSign = { ... TypedData, message: request };
+  const toSign = { ...TypedData, message: request };
 
   // Directly call the JSON RPC interface, since ethers does not support signTypedDataV4 yet
   // See https://github.com/ethers-io/ethers.js/issues/830

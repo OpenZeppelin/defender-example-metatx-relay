@@ -39,7 +39,7 @@ function App() {
         <div className="App-status">
           <p>{status}
           {txHash && (
-            <a className="App-link" href={`https://rinkeby.etherscan.io/tx/${txHash}`} target="_blank">(view in Etherscan)</a>
+            <a className="App-link" href={`https://rinkeby.etherscan.io/tx/${txHash}`} rel="noopener noreferrer" target="_blank">(view in Etherscan)</a>
           )}</p>
         </div>
         <BoxValue />

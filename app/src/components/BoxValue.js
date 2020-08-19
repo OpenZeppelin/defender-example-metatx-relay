@@ -17,7 +17,7 @@ function BoxValue() {
   }, []);
   
   return value ? (<div className="BoxValue">
-    <p>Value stored for the current address is {value} <a href={`https://rinkeby.etherscan.io/address/${process.env.REACT_APP_BOXES_ADDRESS}#readContract`} target="_blank">(view in Etherscan)</a></p>
+    <p>Value stored for the current address is {value} <a href={`https://rinkeby.etherscan.io/address/${process.env.REACT_APP_BOXES_ADDRESS}#readContract`} rel="noopener noreferrer" target="_blank">(view in Etherscan)</a></p>
   </div>) : '';
 }
 
