@@ -7,7 +7,7 @@
     "build": "npm run build:contracts && npm run build:app && npm run build:functions",
     "build:app": "cd app && SKIP_PREFLIGHT_CHECK=true npm run build",
     "build:contracts": "buidler compile",
-    "build:functions": "netlify-lambda build",
+    "build:functions": "netlify-lambda build functions",
     "postinstall": "npm run install:app && npm run install:functions",
     "install:app": "cd app && npm install",
     "install:functions": "netlify-lambda install"
