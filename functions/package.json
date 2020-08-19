@@ -1,0 +1,17 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "relay.js",
+  "scripts": {},
+  "dependencies": {
+    "defender-relay-client": "^0.1.0",
+    "dotenv": "^8.2.0",
+    "eth-sig-util": "^2.5.3",
+    "ethereumjs-util": "^7.0.4",
+    "ethers": "^5.0.8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
