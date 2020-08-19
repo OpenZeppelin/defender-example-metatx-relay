@@ -24,6 +24,7 @@
     "cors": "^2.8.5",
     "defender-relay-client": "^0.1.0",
     "dotenv": "^8.2.0",
+    "encoding": "^0.1.13",
     "eth-sig-util": "^2.5.3",
     "ethereum-waffle": "^3.0.2",
     "ethereumjs-util": "^7.0.4",
