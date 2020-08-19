@@ -23,8 +23,8 @@ module.exports = {
     buidlerevm: {
     },
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/" + process.env.DEPLOY_INFURA_KEY,
-      accounts: [process.env.DEPLOY_RINKEBY_PRIVATE_KEY]
+      url: `https://rinkeby.infura.io/v3/${process.env.DEPLOY_INFURA_KEY || ''}`,
+      accounts: process.env.DEPLOY_RINKEBY_PRIVATE_KEY ? [process.env.DEPLOY_RINKEBY_PRIVATE_KEY] : []
     }
   }
 };
