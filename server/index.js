@@ -9,7 +9,7 @@ const relay = require('../functions/relay').handler;
 app.use(express.json());
 app.use(cors());
 
-app.post('/relay', (req, res) => {
+const relayHandler = (req, res) => {
   relay({ body: JSON.stringify(req.body) }, null, (error, response) => {
     if (error) {
       res.status(500).send(error.message);
@@ -18,7 +18,10 @@ app.post('/relay', (req, res) => {
       res.status(statusCode).send(JSON.parse(body));
     }
   });
-})
+};
+
+app.post('/relay', relayHandler);
+app.post('.netlify/functions/relay', relayHandler);
 
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
