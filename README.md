@@ -30,7 +30,7 @@ contract Boxes is BaseRelayRecipient {
 
 ## Client setup
 
-Instead of sending a transaction directly, the client instead fetches its current nonce in the `TrustedForwarder` contract uses EIP712v4 to sign the meta-tx request. This logic is in [`app/src/eth/txs.js`](./blob/master/app/src/eth/txs.js). Most of the complexity is related to the signature scheme, and can easily be abstracted away.
+Instead of sending a transaction directly, the client instead fetches its current nonce in the `TrustedForwarder` contract uses EIP712v4 to sign the meta-tx request. This logic is in [`app/src/eth/txs.js`](./app/src/eth/txs.js). Most of the complexity is related to the signature scheme, and can easily be abstracted away.
 
 ```js
 // Get nonce for current signer
@@ -57,7 +57,7 @@ const response = await fetch(RelayUrl, {
 
 ## Server setup
 
-The server listens for POSTs from the client, verifies the signature and nonce are correcty by calling `verify` on the `TrustedForwarder`, and then uses the `defender-relay-client` library to send a transaction to the forwarder using a Defender Relayer. This logic is in [`functions/relay.js`](./blob/master/functions/relay.js)
+The server listens for POSTs from the client, verifies the signature and nonce are correcty by calling `verify` on the `TrustedForwarder`, and then uses the `defender-relay-client` library to send a transaction to the forwarder using a Defender Relayer. This logic is in [`functions/relay.js`](./functions/relay.js)
 
 ```js
 // Unpack request
