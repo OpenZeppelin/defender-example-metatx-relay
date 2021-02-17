@@ -1,6 +1,6 @@
 # Defender meta-transaction relayer proof-of-concept
 
-:warning: **Go to the [Defender meta-tx workshop](https://github.com/OpenZeppelin/workshops) for a more up-to-date version of implementing meta-txs using Defender Relayer and Autotasks!** :warning:
+:warning: **Go to the [Defender meta-tx workshop](https://github.com/OpenZeppelin/workshops) for a more up-to-date implementation of meta-txs using Defender Relayer and Autotasks!** :warning:
 
 Proof of concept for relaying meta transactions using a Defender Relayer via a GSNv2-compatible Trusted Forwarder.
 
